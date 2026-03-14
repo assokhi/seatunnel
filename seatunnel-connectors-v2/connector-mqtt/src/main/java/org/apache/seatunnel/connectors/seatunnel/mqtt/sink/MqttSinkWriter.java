@@ -204,10 +204,7 @@ public class MqttSinkWriter implements SinkWriter<SeaTunnelRow, Void, Void>, Mqt
             }
         }
         throw new IOException(
-                new MqttConnectorException(
-                                MqttConnectorErrorCode.PUBLISH_FAILED,
-                                "Failed to publish MQTT message after " + retryTimeoutMs + "ms")
-                        .getMessage(),
+                "Failed to publish MQTT message after " + retryTimeoutMs + "ms",
                 lastException);
     }
 
