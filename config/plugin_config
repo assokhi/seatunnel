@@ -69,6 +69,7 @@ connector-kafka
 connector-kudu
 connector-maxcompute
 connector-mongodb
+connector-mqtt
 connector-neo4j
 connector-openmldb
 connector-pulsar
